@@ -1,23 +1,18 @@
 package com.ckx.test.thread.demo6;
 
-public class ThreadB extends Thread {  
+public class ThreadB extends Thread {
 
-private ObjectService objectService;  
+    private ObjectService objectService;
 
-public ThreadB(ObjectService objectService) {  
+    public ThreadB(ObjectService objectService) {
+        super();
+        this.objectService = objectService;
+    }
 
-super();  
+    @Override
+    public void run() {
+        objectService.methodB();
 
-this.objectService = objectService;  
-
-    }  
-
-@Override  
-
-public void run() {  
-
-        objectService.methodB();  
-
-    }  
+    }
 
 }  

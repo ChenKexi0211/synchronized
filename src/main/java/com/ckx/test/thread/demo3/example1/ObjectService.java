@@ -21,7 +21,7 @@ public class ObjectService {
                 Thread.sleep(3000);
                 pwd = passWord;
                 System.out.println("thread name=" + Thread.currentThread().getName()
-                        + " time=" + dateFormat.format(System.currentTimeMillis()) + "入参uname:" + uname + "入参pwd:" + pwd);
+                        + " time=" + dateFormat.format(System.currentTimeMillis()) + " 入参uname:" + uname + "入参pwd:" + pwd);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

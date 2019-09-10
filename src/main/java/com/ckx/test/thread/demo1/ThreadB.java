@@ -5,7 +5,6 @@ public class ThreadB extends Thread {
     private ObjectService objectService;
 
     public ThreadB(ObjectService objectService) {
-
         super();
         this.objectService = objectService;
     }
@@ -14,7 +13,6 @@ public class ThreadB extends Thread {
     public void run() {
         super.run();
         objectService.serviceMethodB();
-
     }
 
 }  

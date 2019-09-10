@@ -15,7 +15,7 @@ public class ObjectService {
             try {
                 for (int i = 1; i <= 10; i++) {
                     System.out.println("synchronized thread name:" + Thread.currentThread().getName() + "-->i=" + i
-                            + "time=" + dateFormat.format(System.currentTimeMillis()));
+                            + " time=" + dateFormat.format(System.currentTimeMillis()));
                     Thread.sleep(1000);
                 }
             } catch (InterruptedException e) {
